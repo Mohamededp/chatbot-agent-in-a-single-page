@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge width=device-width, initial-scale=1.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+
+<body>
+
+    <div class="nav">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light ">
+
+            <img src="images/fadein.png">
+
+</div>
+
+
+    <!-- chatbot -->
+
+<label id="demo"></label><br>
+<label id="demo2"></label><br>
+<label id="demoship"></label><br>
+<label id="demobuild"></label><br>
+<label id="demofloor"></label><br>
+<label id="demoflat"></label><br>
+<label id="demostreet"></label><br>
+<label id="demoregion"></label><br>
+<label id="demogovern"></label><br>
+<label id="demolandmark"></label><br>
+<label id="demoadd"></label><br>
+<label id="demonum"></label><br>
+<label id="demonum1"></label><br>
+<label id="demonum2"></label><br>
+
+<!-- CHAT BAR BLOCK -->
+<div style="z-index:100; position: fixed;" class="chat-bar-collapsible">
+    <button id="chat-button" class="collapsible">ABS Bot !
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content" id="top">
+        <div class="full-chat-block" id="top2" >
+            <!-- Message Container -->
+            <div class="outer-container" id="top3">
+                <div class="chat-container" id="top4">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <!--
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            -->
+                            
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<label id="From"></label>
+
+<!-- <select name="From" id="from" onchange="test();">
+  <option value="Cairo">Cairo</option>
+  <option value="Alexandria">Alexandria</option>
+  <option value="Suez">Suez</option>
+  <option value="Red Sea">Red Sea</option>
+</select> -->
+<label id="To"></label>
+
+<!-- <select name="To" id="to" onchange="test2();">
+  <option value="Cairo">Cairo</option>
+  <option value="Alexandria">Alexandria</option>
+  <option value="Suez">Suez</option>
+  <option value="Red Sea">Red Sea</option>
+</select> -->
+<!-- <button type="button" onclick="clickk();">Calculate</button> -->
+
+<label id="total"></label>
+<label id="total2"></label>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/Branches.js"></script>
+
+</html>

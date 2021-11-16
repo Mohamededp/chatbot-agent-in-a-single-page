@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    margin: 0 auto;
+    background-color: white;
+}
+
+@media (min-width: 576px) {
+    :root {
+      --size-divisor: 2;
+    }
+  }
+  @media (min-width: 768px) {
+    :root {
+      --size-divisor: 1.5;
+    }
+  }
+  @media (min-width: 992px) { 
+    :root {
+      --size-divisor: 1;
+    }
+  }
+  @media (min-width: 1200px) { 
+    :root {
+      --size-divisor: .67;
+    }
+  }
